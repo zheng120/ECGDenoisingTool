@@ -14,6 +14,15 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
+#INPUTS:
+# signal: input signal (vector)
+# Nvar: Gaussian scale factor
+# P: max search distance
+# PatchWH: patch half-width
+# OUTPUTS:
+# denoisedSig: the NLM-denoised signal
+# debug: structure containing various quantitities that can help debug
+#
 # Written by Jianwei Zheng.
 from scipy import signal
 import matplotlib.pyplot as plt
